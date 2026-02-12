@@ -1,0 +1,57 @@
+Individual Health Issues:
+    participant_id name   health_issue
+0                1    A        Anxiety
+1                2    B       Diabetes
+2                3    C      Back Pain
+3                4    D   Hypertension
+4                5    E      Arthritis
+5                6    F         Stress
+6                7    G  Heart Disease
+7                8    H       Migraine
+8                9    I           PCOS
+9               10    J        Obesity
+10              11    K        Thyroid
+11              12    L       Insomnia
+12              13    M     Depression
+13              14    N         Asthma
+14              15    O         Anemia
+15              16    P        High BP
+16              17    Q        Fatigue
+17              18    R       Headache
+
+Participants by Gender & Age Group:
+   gender age_group  count
+0  Female     18–24      1
+1  Female     25–34      5
+2  Female     35–44      1
+3  Female     45–54      1
+4  Female       55+      1
+5    Male     18–24      2
+6    Male     25–34      1
+7    Male     35–44      2
+8    Male     45–54      2
+9    Male       55+      2
+
+Health Issue Frequency:
+health_issue
+Anxiety          1
+Diabetes         1
+Back Pain        1
+Hypertension     1
+Arthritis        1
+Stress           1
+Heart Disease    1
+Migraine         1
+PCOS             1
+Obesity          1
+Thyroid          1
+Insomnia         1
+Depression       1
+Asthma           1
+Anemia           1
+High BP          1
+Fatigue          1
+Headache         1
+Name: count, dtype: int64
+
+=== Code Execution Successful ===

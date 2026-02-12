@@ -1,3 +1,1 @@
-Conducted user research with 18+ participants to identify health issues. Individually analyzed specific
-health problems for each participant. Proposed features to categorize participants by gender and age
-groups.
+Conducted in-depth user research with 18+ participants to identify prevalent health issues and individual wellness concerns. Performed one-on-one analysis to document specific health problems for each participant and synthesized findings to uncover common patterns and trends. Proposed and designed feature enhancements to categorize users by age group and gender, enabling more personalized insights and targeted health recommendations. Collaborated on translating research findings into actionable product requirements to improve user experience and data-driven decision making.

@@ -1,0 +1,68 @@
+import pandas as pd
+
+# Sample participant dataset (18+ users)
+data = {
+    "participant_id": range(1, 19),
+    "name": [
+        "A","B","C","D","E","F","G","H","I",
+        "J","K","L","M","N","O","P","Q","R"
+    ],
+    "age": [22,35,28,45,51,19,63,34,27,41,55,24,38,60,29,48,33,26],
+    "gender": [
+        "Female","Male","Female","Male","Female","Male","Male","Female",
+        "Female","Male","Female","Male","Female","Male","Female","Male",
+        "Female","Male"
+    ],
+    "health_issue": [
+        "Anxiety","Diabetes","Back Pain","Hypertension","Arthritis",
+        "Stress","Heart Disease","Migraine","PCOS","Obesity",
+        "Thyroid","Insomnia","Depression","Asthma","Anemia",
+        "High BP","Fatigue","Headache"
+    ]
+}
+
+df = pd.DataFrame(data)
+
+# -----------------------------------
+# Age group categorization
+# -----------------------------------
+
+def age_group(age):
+    if age < 25:
+        return "18–24"
+    elif age < 35:
+        return "25–34"
+    elif age < 45:
+        return "35–44"
+    elif age < 55:
+        return "45–54"
+    else:
+        return "55+"
+
+df["age_group"] = df["age"].apply(age_group)
+
+# -----------------------------------
+# Individual participant analysis
+# -----------------------------------
+
+print("\nIndividual Health Issues:")
+print(df[["participant_id", "name", "health_issue"]])
+
+# -----------------------------------
+# Categorize by Gender & Age Group
+# -----------------------------------
+
+grouped = df.groupby(["gender", "age_group"]).size().reset_index(name="count")
+
+print("\nParticipants by Gender & Age Group:")
+print(grouped)
+
+# -----------------------------------
+# Health issue summary
+# -----------------------------------
+
+health_summary = df["health_issue"].value_counts()
+
+print("\nHealth Issue Frequency:")
+print(health_summary)
+
